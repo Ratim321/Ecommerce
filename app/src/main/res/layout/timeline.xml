@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <RelativeLayout
+        android:layout_width="354dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283">
+
+        <ImageView
+            android:id="@+id/productimg"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/placeholder"
+            android:layout_alignParentTop="true"
+           android:layout_marginLeft="12dp"
+           android:layout_alignParentLeft="true"
+
+
+            />
+
+        <TextView
+            android:id="@+id/customerProductdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:scaleType="fitCenter"
+            android:text="Your Product"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/placeholder"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/productimg"
+            android:layout_alignParentLeft="true"
+
+
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/textView3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.183">
+
+
+            <ImageView
+                android:id="@+id/frec"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerInParent="true"
+                android:background="#24F10D"
+                android:src="@drawable/tickinsidecircle"
+                android:visibility="invisible" />
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/waiting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/textView3"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="2dp"
+            android:text="Waiting" />
+
+        <TextView
+            android:id="@+id/fline"
+            android:layout_width="59dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="47dp"
+            android:layout_toRightOf="@id/textView3"
+            android:background="@drawable/line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.206"
+            tools:ignore="MissingConstraints" />
+
+
+        <RelativeLayout
+            android:id="@+id/textView4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@id/fline"
+            android:background="@drawable/circle"
+            android:layout_marginTop="31dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.183">
+
+
+            <ImageView
+                android:id="@+id/srec"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerInParent="true"
+                android:background="#24F10D"
+                android:src="@drawable/tickinsidecircle"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/textView4"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/confirmed"
+
+            android:layout_marginLeft="85dp"
+            android:layout_marginBottom="2dp"
+            android:text="confirmed order" />
+
+
+        <TextView
+            android:id="@+id/sline"
+            android:layout_width="59dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="47dp"
+            android:layout_toRightOf="@id/textView4"
+            android:background="@drawable/line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.206"
+            tools:ignore="MissingConstraints" />
+
+        <RelativeLayout
+            android:id="@+id/textView5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@id/sline"
+            android:background="@drawable/circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.183">
+
+
+            <ImageView
+                android:id="@+id/trec"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerInParent="true"
+                android:background="#24F10D"
+                android:src="@drawable/tickinsidecircle"
+                android:visibility="invisible" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/textView5"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/delivered"
+
+            android:layout_marginLeft="215dp"
+            android:layout_marginBottom="2dp"
+            android:text="Delivered" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
